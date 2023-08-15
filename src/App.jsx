@@ -1,19 +1,20 @@
-import React from 'react'
-import Navbar from './assets/compnents/NavBar';
-import Home from './assets/Pages/Home';
-// import Login from './assets/Pages/Login';
+import React from "react";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./assets/Pages/Home";
+import Login from "./assets/Pages/Login";
+import CardPage from "./assets/Pages/CardPage";
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Home />
-      {/* <Login /> */}
-
-      
-
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/card" element={<CardPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -1,15 +1,19 @@
-import React from 'react'
-import Card from '../compnents/Card';
+import React from "react";
+import Card from "../compnents/Card";
+import Navbar from "../compnents/NavBar";
 
 function Home() {
   return (
     <div>
-      <main>
-        <img src="https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce-768x278.jpg" className='w-full vh-60' alt="Img" />
-        <Card />
-      </main>
+      <Navbar />
+      <img
+        src="https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce-768x278.jpg"
+        className="w-full vh-60"
+        alt="Img"
+      />
+      <Card />
     </div>
-  )
+  );
 }
 
 export default Home;
